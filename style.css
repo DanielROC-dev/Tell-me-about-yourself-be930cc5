@@ -1,0 +1,74 @@
+body {
+background-image: url("clash.jpg");
+background-size: 1920px 1000px;
+color: yellow;
+letter-spacing: 10;
+}
+
+.module {
+	cursor: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/whatsapp/224/flushed-face_1f633.png"), auto;
+}
+
+h1{ font-size: 100px;
+}
+h2 { font-size: 1px;
+}
+label {
+	display: block;
+	font: 1rem 'Fira Sans', sans-serif;
+}	
+
+p,
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+label {
+	margin: .4rem0;
+	width: 300px;
+	border-radius: 5px;
+}
+
+
+#shadowBox {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Black w/opacity/see-through */
+  border: 3px solid;
+}
+
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 50px;
+  font-family: monospace;
+  letter-spacing: 10px;
+  animation: colorRotate 0.3s linear 0s infinite;
+}
+
+
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+ $('input[type="checkbox"]').on('change', function() {
+   $(this).siblings('input[type="checkbox"]').prop('checked', false);
+});
